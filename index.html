@@ -19,6 +19,9 @@
     <!-- Argon CSS -->
   <link type="text/css" href="Css/argon-design-system.min.css" rel="stylesheet">
 
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  
     <!-- Personal Styling -->
     <link rel="stylesheet" href="Css/style.css">
 
@@ -72,16 +75,16 @@
                         </a>
                     </li>
                 </ul>
-                <i class="iul iul-times nav__close" id="nav__close"></i> 
+                <i class="uil uil-times nav__close" id="nav-close"></i> 
              </div>
 
              <div class="nav__btns">
                  <!--THEME CHANGING BUTTONS-->
                  <i data-mode= "dark" class="uil uil-moon moon-change-theme" id="theme-button"></i>
 
-                 <div>
-                     <i class="uil uil-apps"></i>
-                 </div>
+                 <div class="nav__toggle" id="nav-toggle">
+                    <i class="uil uil-apps"></i>
+                </div>
              </div>
          </nav>
 
@@ -92,18 +95,168 @@
 <!-- ------------------------- HOME -------------------------- -->
 
 <section class="home section" id="home">
-     
+        <div class="home__container container grid">
+
+            <div class="home__content grid">
+                <div class="home__social">
+                    <a href="https://www.linkedin.com/in/laura-de-los-santos-a0559b170/" target="_blank" class="home__social-icon" id="myLinkedIn">
+                        <i class="uil uil-linkedin-alt"></i>
+                    </a>
+
+                    <a href="https://wa.me/8297124911" target="_blank" class="home__social-icon" id="myWhatsapp">
+                        <i class="uil uil-whatsapp"></i>
+                    </a>
+
+                    <a href="https://github.com/Laura8585" target="_blank" class="home__social-icon" id="myGithub">
+                        <i class="uil uil-github-alt"></i>
+                    </a>
+
+                    <a href="https://t.me/LauraDeLosSantos" target="_blank" class="home__social-icon" id="myTelegram">
+                        <i class="uil uil-telegram-alt"></i>
+                    </a>
+
+                </div>
+            </div>
+
+            <div class="home__data">
+                <small class="home__welcome s-color"> Welcome to my Portfolio Website! </small>
+                <h1 class="home__title"> Hey I'm </h1>
+                <div id="typewriter"></div>
+                <h3 class="home__subtitle" id="home-bio">I am a software engineering student enthusiast about web development and cyber security. Passionate on learning new. Adore Classical Musics </h3>
+                <a href="#contact" class="button button--flex">
+                    Contact Me <i class="uil uil-message button__icon"></i>
+                </a>
+            </div>
+
+        </div>
+
+        <div class="home__scroll">
+            <a href="#about" class="home__scroll-button button--flex">
+                <i class="uil uil-mouse-alt home__scroll-mouse"></i>
+                <!-- <span class="home__scroll-name"> Scroll Down </span>
+                <i class="uil uil-arrow-down home__scroll-arrow"></i> -->
+            </a>
+        </div>
+    </section>
+
 </section>
 <!-- ------------------------- ABOUT ME -------------------------- -->
 
 <section class="about section" id="about">
-     
+    <h2 class="section__title">About</h2>
+    <span class="section__subtitle"> My Introduction </span>
+
+    <div class="about__container container grid">
+        <img src="assets/img/Profile2.jpeg" alt="my achievement photo" class="about__img">
+
+        <div class="about__data">
+            <p class="about__description" id="home-about"> 
+                Web developer, with extensive knowledge and years of experience, working with web technologies and designing. Delivering quality works. Professionally I am an Electrical engineer as well.
+            </p>
+        </div>
+
+        <div class="about__info">
+            <div>
+                <span class="about__info-title"> 02+ </span>
+                <span class="about__info-name"> Years <br> Experience </span>
+            </div>
+
+            <div>
+                <span class="about__info-title"> 10+ </span>
+                <span class="about__info-name"> Completed <br> Projects </span>
+            </div>
+
+            <div>
+                <span class="about__info-title"> 02+ </span>
+                <span class="about__info-name"> Companies <br> Worked </span>
+            </div>
+        </div>
+
+        <div class="about__buttons">
+            <a href="assets/file/laura de los santos.pdf" download="my_CV" target="_blank" class="button button--flex">
+                Download CV <i class="uil uil-download-alt button__icon"></i>
+            </a>
+            <br>
+            <a href="assets/file/laura de los santos - español.pdf" download="mi_CV_español" target="_blank" class="button button--flex">
+                Descargar CV español <i class="uil uil-download-alt button__icon"></i>
+            </a>
+
+        </div>
+    </div>
 </section>
 
 <!-- ------------------------- SKILLS ------------------------ -->
 
 <section class="skills section" id="skills">
-     
+    <h2 class="section__title"> Skillset </h2>
+    <span class="section__subtitle"> My skillsets </span>
+
+    <div class="skills__container container grid">
+        <div class="row" id="skillset_container">
+            <!-- Skill 1 -->
+            <div class="skills__container-card">
+                <div class="card_skill shadow2">
+                    <div class="imgBx">
+                        <img src="https://res.cloudinary.com/bjha/image/upload/v1627831745/skillset%20logos/HTML_5-595b40b65ba036ed117d4260_fnyo1z.svg" alt="HTML logo">
+                    </div>
+                    <div class="contentBx">
+                        <h2> HTML </h2>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Skill 2 -->
+            <div class="skills__container-card">
+                <div class="card_skill shadow2">
+                    <div class="imgBx">
+                        <img src="https://res.cloudinary.com/bjha/image/upload/v1627831742/skillset%20logos/Css3-595b40b65ba036ed117d3eb8_jiqifm.svg" alt="HTML logo">
+                    </div>
+                    <div class="contentBx">
+                        <h2> CSS </h2>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Skill 3 -->
+            <div class="skills__container-card">
+                <div class="card_skill shadow2">
+                    <div class="imgBx">
+                        <img src="https://res.cloudinary.com/bjha/image/upload/v1627831744/skillset%20logos/javascript-seeklogo.com_wthmgd.svg" alt="HTML logo">
+                    </div>
+                    <div class="contentBx">
+                        <h4> Javascript </h4>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Skill 4 -->
+            <div class="skills__container-card">
+                <div class="card_skill shadow2">
+                    <div class="imgBx">
+                        <img src="https://cdn2.downdetector.com/static/uploads/c/300/0d4f7/figma2.png" alt="HTML logo">
+                    </div>
+                    <div class="contentBx">
+                        <h2> Figma </h2>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Skill 5 -->
+            <div class="skills__container-card">
+                <div class="card_skill shadow2">
+                    <div class="imgBx">
+                        <img src="https://img.stackshare.io/service/7096/809746be-0b96-4af0-aa2f-5d1aeaa82658.png" alt="HTML logo">
+                    </div>
+                    <div class="contentBx">
+                        <h3> SQL </h3>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
 </section>
 
 <!-- ------------------------- EDUCATION & EXPERIENCE ------------------------ -->
@@ -120,7 +273,39 @@
 <!-- ------------------------- CONTACTE ME -------------------------- -->
 
 <section class="contact section" id="contact">
-     
+    <h2 class="section__title"> Contact Me </h2>
+    <span class="section__subtitle"> Get in touch</span>
+
+    <div class="row mt-lg-6 justify-content-center contact_mail">
+        <!-- Contact information -->
+        <div class="col-lg-6 mx-lg-0 mx-2 contact__container container">
+            <div class="contact__information">
+                <i class="uil uil-phone contact__icon"></i>
+
+                <div>
+                    <h3 class="contact__title">Call Me</h3>
+                    <span class="contact__subtitle">(829)-712-4911</span>
+                </div>
+            </div>
+
+            <div class="contact__information">
+                <i class="uil uil-envelope contact__icon"></i>
+
+                <div>
+                    <h3 class="contact__title">E-mail</h3>
+                    <span class="contact__subtitle">l.delossantos0711@gmail.com</span>
+                </div>
+            </div>
+
+            <div class="contact__information">
+                <i class="uil uil-location-pin-alt contact__icon"></i>
+                <div>
+                    <h3 class="contact__title">Address</h3>
+                    <span class="contact__subtitle"> Calle 11/Los Corales, Santo Domingo - Dominican Republic</span>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
 
 
@@ -129,7 +314,56 @@
 
      <!-- ------------------------- FOOTER -------------------------- -->
      <footer class="footer">
+        <div class="footer__bg">
+            <div class="footer__container container grid">
 
+                <div>
+                    <h1 class="footer__title"> Laura De Los Santos</h1>
+                    <span class="footer__subtitle"> Software engineering student</span>
+                </div>
+
+                <ul class="footer__links">
+                    <li>
+                        <a href="#about" class="footer__link"> About Me</a>
+                    </li>
+
+                    <li>
+                        <a href="#portfolio" class="footer__link"> My Portfolio</a>
+                    </li>
+
+                    <li>
+                        <a href="#contact" class="footer__link"> Contact Me</a>
+                    </li>
+                </ul>
+
+                <div class="footer__socials">
+                    <a href="https://www.linkedin.com/in/laura-de-los-santos-a0559b170/" target="_blank" class="footer__social" id="myLinkedIn">
+                        <i class="uil uil-linkedin-alt"></i>
+                    </a>
+
+                    <a href="https://wa.me/8297124911" target="_blank" class="footer__social" id="myWhatsapp">
+                        <i class="uil uil-whatsapp-alt"></i>
+                    </a>
+
+                    <a href="https://github.com/Laura8585" target="_blank" class="footer__social" id="myGithub">
+                        <i class="uil uil-github-alt"></i>
+                    </a>
+
+                    <a href="https://t.me/LauraDeLosSantos" target="_blank" class="footer__social" id="myTelegram">
+                        <i class="uil uil-telegram"></i>
+                    </a>
+                </div>
+            </div>
+
+            <p class="footer__copy">&#169; LDLS. All rights reserved</p>
+        </div>
+    </footer>
+  
+
+<!-- ------------- SCROLL TOP -------------------->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="uil uil-arrow-up scrollup__icon"></i>
+    </a>
      </footer>
 
     
@@ -149,6 +383,12 @@
 
     <!-- Argon JS -->
     <script src="JavaScript/argon-design-system.min.js"></script>
+
+    <!--  Typewriter CSS Effect -->
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
     <!-- Personal Script -->
     <script src="JavaScript/script.js"></script>
